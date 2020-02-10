@@ -18,6 +18,9 @@ from tensorboardX import SummaryWriter
 parser = custom.get_argument_parser()
 args = parser.parse_args()
 config.load(args.model_dir, args.configs, initialize=True)
+print("args.model_dir ",args.model_dir)
+print("args.configs ",args.configs)
+
 
 # check cuda
 if torch.cuda.is_available():
